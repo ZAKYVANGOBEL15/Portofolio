@@ -274,11 +274,7 @@ textarea {
     margin: 200px auto;
     height: 500px;
     align-items: center;
-    background-color: #232323;
     justify-content: center;
-    width: 100px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px 0 white;
     display: flex;
   }
 }
