@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: Monospace;
+  transition: .5s;
+}
+
+/*Nav*/
+.nav1 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  background-color: #0000004e;
+}
+
+togle {
+  font-size: 30px;
+  color: white;
+  display: flex;
+}
+
+.logo {
+  color: white;
+  font-family: Monospace;
+  font-size: 30px;
+  margin-left: 80%;
+}
+
+ul {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+li {
+  font-size: 20px;
+}
+
+i2 {
+  color: white;
+  font-size: 35px;
+  transition: .4s;
+}
+
+.rotate {
+  transform: rotate(280deg);
+}
+
+.ul1 {
+  background-color: black;
+  width: 100px;
+  justify-content: center;
+  margin-left: -100px;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  left: 0;
+  transition: .5s;
+  height: 100vh;
+}
+
+.ul1_ada {
+  background-color: #000000da;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  color: white;
+}
+
+/*Nav*/
+
+
+/*Content*/
+
+.content {
+  width: 300px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  color: #e0e0e0;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.p1 {
+  color: white;
+  font-size: 35px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.btn1 {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .5s;
+  border: 1px solid black;
+  background-color: #484891;
+  color: white;
+}
+
+.btn1:hover {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #2c2c57;
+}
+
+.galery {
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+img {
+  height: 250px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.kotak {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.t1 {
+  margin-left: 30px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.pa {
+  margin-left: 30px;
+}
+
+.taq {
+  color: white;
+  margin-left: 30px;
+  padding-bottom: 40px;
+}
+
+.a1 {
+  color: white;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+h5 {
+  color: gray;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+
+h2 {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+i1 {
+  color: white;
+  font-size: 30px;
+}
+
+.social {
+  font-size: 25px;
+}
+
+.sosmed {
+  margin-left: 30px;
+}
+
+h4 {
+  text-align: center;
+  color: white;
+}
+
+.copy {
+  margin-top: 70px;
+}
+
+.input_data {
+  border-bottom: 1px solid black;
+}
+
+.about {
+  justify-content: center;
+}
+
+/*input_form*/
+.kotak_input {
+  margin: 200px auto;
+  height: 500px;
+  align-items: center;
+  background-color: #232323;
+  justify-content: center;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 white;
+  display: flex;
+}
+
+input {
+  padding: 5px;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.input {
+  width: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.btn {
+  width: 180px;
+  transition: .5s;
+}
+
+.btn:hover {
+  width: 180px;
+  border: none;
+  background-color: #484891;
+}
+
+label {
+  color: #fff;
+  font-weight: bold;
+}
+
+textarea {
+  outline: none;
+  resize: none;
+  width: 178px;
+  height: 100px;
+}
+
+/*Content*/
+@media screen and (max-width: 750px) {
+  .logo {
+    margin-left: 40%;
+  }
+
+  .kotak_input {
+    margin: 200px auto;
+    height: 500px;
+    align-items: center;
+    background-color: #232323;
+    justify-content: center;
+    width: 340px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 white;
+    display: flex;
+  }
+}
