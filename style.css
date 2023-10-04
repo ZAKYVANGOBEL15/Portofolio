@@ -241,12 +241,11 @@ input {
 }
 
 .btn {
-  width: 180px;
+  width: 217px;
   transition: .5s;
 }
 
 .btn:hover {
-  width: 180px;
   border: none;
   background-color: #484891;
 }
@@ -259,7 +258,7 @@ label {
 textarea {
   outline: none;
   resize: none;
-  width: 178px;
+  width: 215px;
   height: 100px;
 }
 
@@ -271,7 +270,9 @@ textarea {
 
   .kotak_input {
     margin: 200px auto;
-    background-color: #1a1a1a;
+    width: 230px;
+    
+    background-color: #1a1a1a1a;
     align-items: center;
     justify-content: center;
     display: flex;
