@@ -129,6 +129,11 @@ article {
 	display: flex;
 	height: fit-content;
 }
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 h4 {
 	font-size: 30px;
 }
@@ -191,6 +196,11 @@ i3 {
 		color: white;
 		display: flex;
 		justify-content: space-around;
+}
+.hero_image {
+
+	height: 200px;
+
 }
 	#service {
 		width: 100%;
