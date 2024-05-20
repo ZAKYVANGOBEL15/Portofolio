@@ -3,6 +3,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: sans-serif;
+}
+html {
 	scroll-behavior: smooth;
 }
 /*nav*/
@@ -17,32 +19,8 @@ nav {
 	display: flex;
 	justify-content: space-around;
 }
-.nav2 {
-	background-color: #444;
-	height: 65px;
-	width: 100%;
-	margin-top: -100px;
-	transition: .4s;
-	align-items: center;
-	position: absolute;
-	color: white;
-	display: flex;
-	justify-content: space-around;
-}
 .ul2 {
-	display: flex;
-}
-
-.nav3 {
-	background-color: #444;
-	height: 65px;
-	margin-top: 0;
-	position: relative;
-	width: 100%;
-	align-items: center;
-	color: white;
 	display: none;
-	justify-content: space-around;
 }
 .ul3 {
 	display: none;
@@ -70,11 +48,17 @@ a {
 	color: white;
 	text-transform: uppercase;
 	transition: .4s;
+	outline: none;
+	cursor: pointer;
+	background-color: none;
 	font-weight: 700;
 	text-decoration: none;
 }
 a:hover {
+	cursor: pointer;
+	outline: none;
 	color: gray;
+	background-color: none;
 	text-decoration: none;
 }
 section {
@@ -148,6 +132,7 @@ h4 {
 	flex-flow: wrap column;
 	color: black;
 	padding: 10px;
+	cursor: pointer;
 	transition: .5s;
 	border-radius: 5px;
 	margin: 0 auto;
@@ -155,9 +140,10 @@ h4 {
 .kotak:hover {
 	background-color: white;
 	width: 200px;
-	box-shadow:  0 0 8px 0 white;
+	box-shadow:  0 0 8px 0 black;
 	height: 200px;
 	color: gray;
+	cursor: pointer;
 	border-radius: 5px;
 	margin: 0 auto;
 }
@@ -185,21 +171,9 @@ i3 {
 	ul {
 		display: none;
 	}
-
-	.nav3 {
-		background-color: #444;
-		height: 65px;
-		margin-top: 0;
-		position: relative;
-		width: 100%;
-		align-items: center;
-		color: white;
-		display: flex;
-		justify-content: space-around;
-}
 .hero_image {
 
-	height: 200px;
+	height: 350px;
 
 }
 	#service {
@@ -218,6 +192,8 @@ i3 {
     i2 {
     	font-size: 35px;
     	display: flex;
+    	outline: none;
+    	cursor: pointer;
     }
 	section {
 		display: flex;
@@ -237,5 +213,41 @@ i3 {
 	.toggle_hilang {
 		display: none;
 	}
+	.ul2 {
+	background-color: #444;
+	height: 405px;
+	width: 100%;
+	margin-left: -900px;
+	margin-top: 0px;
+	flex-flow: wrap column;
+	transition: .5s;
+	align-items: center;
+	position: absolute;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+.ul3 {
+	background-color: #444;
+	height: 405px;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 0px;
+	flex-flow: wrap column;
+	transition: .4s;
+	align-items: center;
+	position: absolute;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
 
+}
+@media screen and (max-width: 463px) {
+
+	.hero_image {
+
+	height: 200px;
+
+}
 }

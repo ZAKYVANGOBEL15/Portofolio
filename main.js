@@ -1,8 +1,8 @@
-function myfunction() {
+document.getElementById('toggle1').onclick = function() {
 
-		let toggle = document.getElementById('demo')
+	let ul2 = document.getElementById('demo2')
 
-		toggle.classList.toggle('nav3')
 
+	ul2.classList.toggle('ul3')
 
 }
