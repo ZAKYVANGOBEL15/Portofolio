@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -35,6 +38,7 @@ i2 {
 h3 {
 	font-size: 25px;
 	font-weight: 700;
+	font-family: Dancing Script;
 	letter-spacing: 1rem;
 }
 ul {
@@ -45,6 +49,7 @@ li {
 	list-style: none;
 }
 a {
+	font-family: Open Sans;
 	color: white;
 	text-transform: uppercase;
 	transition: .4s;
@@ -159,6 +164,9 @@ footer {
 	width: 100%;
 	color: whitesmoke;
 	justify-content: center;
+}
+p {
+	font-family: Open Sans;
 }
 .media {
 	padding-top: 10px;
