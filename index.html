@@ -1,96 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<script src="https://unpkg.com/@phosphor-icons/web"></script>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="zaky3.png">
-	<title>ZAKY VAN GOBEL</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
 </head>
 <body>
-	<div class="container" id="cont_demo">
+    
+    <div class="nav">
 
-		<nav>
-			<div class="logo">
-				<a href="#"><h3>ZVG</h3></a>
-			</div>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#service">Service</a></li>
-				<li><a href="#article">About</a></li>
-				<div class="mode1" id="mode1">
-					<div id="bulat1" class="bulat1"></div>
-				</div>
-			</ul>
-			<div id="toggle1" class="toggle">
-				<i2 class="ph ph-list"></i2>
-			</div>
-		</nav>
-			
-			<ul id="demo2" class="ul2">
-				<li><a href="#">Home</a></li>
-				<li><a href="#service">Service</a></li>
-				<li><a href="#article">About</a></li>
-				<div class="mode2" id="mode2">
-					<div id="bulat2" class="bulat2"></div>
-				</div>
-			</ul>
+        <div class="logo">
+            <span>Z V G</span>
+        </div>
+        
 
-			<div class="info">
-				<!-- <p class="info_title">Hello My name is</p> -->
-				<h1 class="my">ZAKY VAN GOBEL</h1>
-				<p>
-				<!-- Hello, I am a Front End Web Developer and network technician from Indonesia, see next</p> -->
-				</div>
-				
-		
-		
-				<div class="hero">
-					<img class="hero_image" src="hero.svg">
-				</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contant">Contant</a></li>
+        </ul>
 
-	</div>
+        <div class="toggle">
+            <i onclick="myfunction()" class="ph ph-list"></i>
+        </div>
 
+    </div>
+    <div class="sidebar" id="demo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contant">Contact</a></li>
+        </ul>
+    </div>
 
-	
-	<div class="container2"id="service" >
-		<h1 >Service</h1>
+    <div class="container">
 
-		<div class="kotak_form">
+        <div class="banner">
 
-			<div class="kotak">
-				<i class="ph ph-browser"></i>
-			</div>
-				
-			<div class="kotak">
-				<i class="ph ph-network"></i>
-			</div>
-	
-			<div class="kotak">
-				<i class="ph ph-align-bottom"></i>
-			</div>
+            <div class="title_cont">
+                ZAKY VAN GOBEL
+            </div>
+    
+            <div class="img">
+                <img class="bg_image" src="img/bg_image.jpg" alt="">
+            </div>
 
+        </div>
+        
 
-		</div>
-			
-		
-	</div>
+    </div>
+
+    <div class="gallery" id="gallery">
+
+        <div class="img_all">
+
+            <div>
+                <img class="img1" src="img/g_1.jpg" alt="">
+            </div>
+            <div>
+                <img  class="img2" src="img/g_2.jpg" alt="">
+            </div>
+            <div>
+                <img class="img3" src="img/g_3.jpg" alt="">
+            </div>
+
+        </div>
+
+       
+
+    </div>
 
 
-	<footer>
-		<p>© Copyrigt By ZAKY VAN GOBEL
-		</p>
-		<div class="media">
-			<a class="logo_media" target="blank" href="https://www.instagram.com/accounts/onetap/?next=%2F"><i3 class="ph ph-instagram-logo"></i3></a>
-			<a class="logo_media" target="blank" href="https://www.facebook.com/profile.php?id=100082567188006&sk=about_overview"><i3 class="ph ph-facebook-logo"></i3></a>
-			<a class="logo_media" href="#"><i3 class="ph ph-github-logo"></i></a>
-			
-			
-			
-		</div>
-	</footer>
+    <footer id="contant">
 
-		<script src="main.js"></script>
+        <div class="media">
+            <a href=""><i class="ph ph-facebook-logo"></i></a>
+            <a href=""><i class="ph ph-github-logo"></i></a>
+            <a href=""><i class="ph ph-instagram-logo"></i></a>
+        </div>
+
+    </footer>
+    
+    <script src="main.js"></script>
+
 </body>
 </html>

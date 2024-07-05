@@ -1,384 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Sevillana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poetsen+One&display=swap');
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
-html {
-	scroll-behavior: smooth;
+body {
+    background-color: #333;
+    font-family: Montserrat;
 }
-/*nav*/
-nav {
-	background-color: #333;
-	height: 65px;
-	top: 0;
-	width: 100%;
-	align-items: center;
-	color: white;
-	position: fixed;
-	z-index: 99;
-	display: flex;
-	justify-content: space-around;
+.nav {
+    background-color: #3333339d;
+    color: #fff;
+    display: flex;
+    backdrop-filter: blur(10px);
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
-.container {
-	transition: .4s ease-in-out;
-	height: 100vh;
-	align-items: center;
-	display: flex;
-	grid-template-columns: 1fr 1fr;
-	color: black;
-	top: 0;
-	padding: 0 50px 0 ;
-	justify-content: space-around;
-	
+.nav ul {
+    display: flex;
+    gap: 2rem;
 }
-.ul2 {
-	display: none;
+.nav ul li {
+    list-style: none;
 }
-.ul3 {
-	display: none;
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
-/*nav end*/
-i2 {
-	display: none;
+.sidebar {
+    background-color: #3333339d;
+    color: #fff;
+    margin-left: -900px;
+    display: none;
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    position: fixed;
+    transition: .4s ease-in-out;
+    width: 100%;
+    align-content: center;
+    top: 5rem;
+    align-items: center;
+    justify-content: center;
 }
+.sidebar2 {
+    margin-left: 0;
+}
+.sidebar ul {
+    display: flex;
+    gap: 10rem;
+    margin-top: -100px;
+    flex-direction: column;
+}
+.sidebar ul li {
+    list-style: none;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.title_cont {
+    font-size: 30px;
+}
+span {
+    font-size: 25px;
+}
+
 .toggle {
-	display: none;
+    display: none;
 }
-h3 {
-	font-size: 25px;
-	font-weight: 700;
-	font-family: Dancing Script;
-	letter-spacing: 1rem;
-}
-ul {
-	display: flex;
-	gap: 40px;
-}
-li {
-	list-style: none;
-}
-a {
-	font-family: Open Sans;
-	color: white;
-	text-transform: uppercase;
-	transition: .4s;
-	outline: none;
-	cursor: pointer;
-	background-color: none;
-	font-weight: 700;
-	text-decoration: none;
-}
-a:hover {
-	cursor: pointer;
-	outline: none;
-	color: gray;
-	background-color: none;
-	text-decoration: none;
+.toggle i {
+    font-size: 30px;
+    display: none;
 }
 
-.info_title {
-	text-transform: uppercase;
-	position: relative;
-	letter-spacing: 5px;
-}
-.info_title:before {
-	content: " ";
-	width: 10px;
-	height: 2px;
-	margin-left: -20px;
-	top: 35%;
-	z-index: 1;
-	position: absolute;
-	border-bottom: 1px solid gray;
-}
-.hero_image {
 
-	height: 300px;
 
-}
 
-.container2 {
-	height: 100vh;
-	display: flex;
-	flex-flow: wrap row;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	background-color: bisque;
+.container {
+    width: 100%;
+    height: 100vh;
+    flex-flow: wrap row;
+    align-content: center;
+    display: flex;
+    color: #fff;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
-.kotak_form {
-	display: flex;
-	height: 40vh;
-	width: 100%;
-	align-items: center;
+.banner {
+    width: 90%;
+    height: 100vh;
+    flex-flow: wrap row;
+    align-content: center;
+    display: flex;
+    color: #fff;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
-.hero {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.img {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
 }
-h4 {
-	font-size: 30px;
+.bg_image {
+    height: 300px;
+    border-radius: 10px;
 }
 
-.kotak {
-	background-color: white;
-	width: 150px;        
-	align-items: center;
-	justify-content: center;
-	height: 150px;
-	text-align: center;
-	display: flex;
-	flex-flow: wrap column;
-	color: black;
-	padding: 10px;
-	cursor: pointer;
-	transition: .5s;
-	border-radius: 5px;
-	margin: 0 auto;
+
+
+
+.gallery {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    align-items: center;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    display: flex;
 }
-.kotak:hover {
-	background-color: white;
-	width: 150px;
-	box-shadow:  0 0 8px 0 black;
-	height: 150px;
-	color: gray;
-	cursor: pointer;
-	border-radius: 5px;
-	margin: 0 auto;
+.img_all {
+    width: 90%;
+    background-color: #fff;
+    height: auto;
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    display: flex;
 }
-i {
-	font-size: 50px;
+.img1 {
+    height: 300px;
+    border-radius: 10px;
 }
+.img2 {
+    height: 300px;
+    border-radius: 10px;
+}
+.img3 {
+    height: 300px;
+    border-radius: 10px;
+}
+
+
 footer {
-	background-color: #333;
-	height: 200px;
-	align-items: center;
-	display: flex;
-	flex-flow: wrap column;
-	width: 100%;
-	color: whitesmoke;
-	justify-content: center;
-}
-.my {
-	font-family: Edu TAS Beginner
-	;
-}
-p {
-	font-family: Open Sans;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .media {
-	padding-top: 10px;
-	display: flex;
-	flex-flow: wrap row;
+    gap: 50px;
+    display: flex;
 }
-i3 {
-	font-size: 40px;
-	cursor: pointer;
+footer a  {
+    font-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
 }
-.logo_media {
-	padding: 8px;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-.mode1 {
-	height: 25px;
-	border-radius: 100px;
-	background-color: black;
-	width: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-}
-.bulat1 {
-	border-radius: 100px;
-	height: 15px;
-	margin-left: -20px;
-	width: 15px;
-	display: flex;
-	cursor: pointer;
-	background-color: rgb(255, 255, 255);
-	transition: .4s ease-in-out;
-}
-.bulat2 {
-	cursor: pointer;
-	border-radius: 100px;
-	height: 15px;
-	margin-left: 20px;
-	display: flex;
-	width: 15px;
-	background-color: rgb(255, 255, 255);
-}
-.darkmode1 {
-	display: flex;
-	background-color: black;
-	color: white;
+footer i {
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
 }
 
 
 
-
-@media screen and (max-width: 700px){
-
-	ul {
-		display: none;
-	}
-.hero_image {
-
-	height: 350px;
-
-	}
-	.ul3 {
-		display: flex;
-	}
-	.toggle {
-		display: flex;
+@media (max-width: 740px) {
+    .sidebar {
+        display: flex;
     }
-    i2 {
-    	font-size: 35px;
-    	display: flex;
-    	outline: none;
-    	cursor: pointer;
+    .title_cont {
+        font-size: 25px;
     }
-	.container {
-		height: 100vh;
-		align-items: center;
-		display: flex;
-		color: black;
-		top: 0;
-		align-content: center;
-		flex-flow: wrap column;
-		justify-content: center;
-		
-	}
-	.container2{
-		height: 100vh;
-		top: 0;
-		gap: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		align-content: center;
-		flex-flow: wrap column;
-	}
-	.my {
-		font-size: 35px;
-		font-family: Edu TAS Beginner
-		;
-	}
-	.kotak_form {
-		display: flex;
-		height: auto;
-		gap: 30px;
-		flex-flow: wrap column;
-	}
-	.kotak {
-		background-color: white;
-		width: 150px;        
-		align-items: center;
-		justify-content: center;
-		height: 150px;
-		text-align: center;
-		display: flex;
-		flex-flow: wrap column;
-		color: black;
-		padding: 10px;
-		cursor: pointer;
-		transition: .5s;
-		border-radius: 5px;
-		margin: 0 auto;
-	}
-	.kotak:hover {
-		background-color: white;
-		width: 150px;
-		box-shadow:  0 0 8px 0 black;
-		height: 150px;
-		color: gray;
-		cursor: pointer;
-		border-radius: 5px;
-		margin: 0 auto;
-	}
-	.toggle_hilang {
-		display: none;
-	}
-	.ul2 {
-		background-color: #44444484;
-		height: 100vh;
-		width: 100px;
-		margin-left: -900px;
-		flex-flow: wrap column;
-		transition: .5s ease-in-out;
-		align-items: center;
-		position: fixed;
-		color: white;
-		display: flex;
-		justify-content: center;
-	}
-	.ul3 {
-		background-color: #44444484;
-		height: 100vh;
-		width: 100%;
-		margin-left: 0;
-		flex-flow: wrap column;
-		transition: .5s ease-in-out;
-		align-items: center;
-		position: fixed;
-		color: white;
-		display: flex;
-		justify-content: center;
-	}
-	.mode2 {
-		height: 25px;
-		border-radius: 100px;
-		background-color: black;
-		width: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-	}
-	
-	.bulat2 {
-		border-radius: 100px;
-		height: 15px;
-		margin-left: -20px;
-		display: flex;
-		width: 15px;
-		cursor: pointer;
-		background-color: white;
-		transition: .4s ease-in-out;
-	}
-	.bulat3 {
-		cursor: pointer;
-		display: flex;
-		border-radius: 100px;
-		height: 15px;
-		margin-left: 20px;
-		width: 15px;
-		background-color: white;
-	}
-	.darkmode2 {
-		display: flex;
-		background-color: black;
-		color: white;
-	}
-
-
-}
-@media screen and (max-width: 463px) {
-
-	.hero_image {
-
-	height: 200px;
-
-}
+    .bg_image  {
+        height: 200px;
+        border-radius: 10px;
+    }
+    .nav ul {
+        display: none;
+        gap: 2rem;
+    }
+    .toggle {
+        display: flex;
+    }
+    .toggle i {
+        font-size: 30px;
+        display: flex;
+    }
 }
