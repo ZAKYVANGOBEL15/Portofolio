@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inconsolata:wght@200..900&display=swap');
+* {
+    font-family: Fredoka;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 99;
+    justify-content: center;
+    height: 10vh;
+    background-color: #343131;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+    color: white;
+    align-items: center;
+    background-color: #343131;
+    z-index: 99;
+    display: flex;
+}
+
+.logo {
+    letter-spacing: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    scale: 1;
+    transition: .2s ease-in-out;
+    font-weight: 700;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: #3A6D8C;
+    scale: 1.05;
+    font-weight: 700;
+}
+
+.toggle {
+    display: none;
+}
+.sidebar {
+    display: none;
+}
+.sidebar2 {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+
+    nav ul {
+        display: none;
+        align-items: center;
+    }
+
+    .toggle {
+
+        display: flex;
+
+    }
+    .toggle i {
+        font-size: 35px;
+    }
+    .sidebar {
+        height: 50vh;
+        top: 67px;
+        width: 200px;
+        background-color: #343131;
+        right: -800px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: .2s ease-in-out;
+        position: absolute;
+        z-index: 99;
+    }
+    .sidebar ul {
+        display: flex;
+        gap: 30px;
+        width: 100px;
+        flex-direction: column;
+    }
+    .sidebar ul li {
+        list-style: none;
+    }
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .sidebar ul li a:hover {
+        text-decoration: none;
+        color: #3A6D8C;
+    }
+    .sidebar2 {
+        display: flex;
+        right: 0;
+    }
+
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.profile {
+    justify-content: center;    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.profileImage {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border: 2px  solid black;
+    margin-top: 100px;
+}
+
+.profile h3 {
+    font-size: 30px;
+  color: #3C3D37;
+}
+
+.profile h4 {
+    color: #000000;
+}
+
+
+.about {
+    background-color: #3C3D37;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    color: white;
+    width: 70%;
+}
+
+.media {
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -80px;
+    width: 50%;
+}
+.media a {
+    font-size: 40px;
+    transition: .2s ease-in-out;
+    color: #3C3D37;
+    scale: 1;
+    text-decoration: none;
+}
+.media a:hover {
+    font-size: 40px;
+    scale: 1.05;
+    color: #3C3D37;
+    text-decoration: none;
+}
+
+.keterampilan {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-keterampilan {
+    display: flex;
+    flex-flow: wrap row;
+    margin: auto;
+    width: 70%;
+    flex-direction: column;
+}
+.container-keterampilan h1 {
+    text-decoration: underline;
+}
+.container-keterampilan i {
+    font-size: 40px;
+}
+.skill {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    flex-flow: wrap row;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+.blog-artikel {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+    padding-top: 100px;
+    color: black;
+    padding-bottom: 100px;
+}
+.blog-artikel h1 {
+    text-decoration: underline;
+}
+.container-blog-artikel {
+    color: black;
+    width: 70%;
+    margin: auto;
+}
+ 
+footer {
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #3C3D37;
+    display: flex;
+}
+
+.container-footer {
+    width: 70%;
+    color: white;
+}
+.container-footer a {
+    color: white;
+    text-decoration: none;
+}
